@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PayjpPractice</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+
+<!--ブラウザでアプリケーションを開いたときに、payjp.jsが読み込まれるようにする。!-->
+    <script type="text/javascript" src="https://js.pay.jp/v1/"></script>
+<!--//ブラウザでアプリケーションを開いたときに、payjp.jsが読み込まれるようにする。!-->
+
+<!--JavaScriptの処理を無効にする機能を取り除く!-->
+    <%#= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag 'application', media: 'all'  %>
+    <%= javascript_pack_tag 'application' %>
+<!--//JavaScriptの処理を無効にする機能を取り除く!-->
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
