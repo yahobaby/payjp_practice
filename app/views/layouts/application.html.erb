@@ -7,7 +7,11 @@
 
 
 <!--ブラウザでアプリケーションを開いたときに、payjp.jsが読み込まれるようにする。!-->
-    <script type="text/javascript" src="https://js.pay.jp/v1/"></script>
+    <%# <script type="text/javascript" src="https://js.pay.jp/v1/"></script> %>
+    <!--2023/1/6より、PAY.JPにおいて、国際的なセキュリティ基準を満たすバージョンのみのAPI提供となったことで、
+    現行のv1のAPI方法ではクレジット決済機能が実装できなくなった。!-->     
+    <script type="text/javascript" src="https://js.pay.jp/v2/pay.js"></script>
+
 <!--//ブラウザでアプリケーションを開いたときに、payjp.jsが読み込まれるようにする。!-->
 
 <!--JavaScriptの処理を無効にする機能を取り除く!-->
